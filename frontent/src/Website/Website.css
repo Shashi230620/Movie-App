@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%; 
+    background-color: black;
+}
+
+.MovieFlix_Website {
+    width: 100%;
+    height: 100%; 
+    /* background-color: red; */
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.MovieFlix_Header {
+    width: 100%;
+    height: 15%; 
+    /* background-color: white; */
+    display: flex;
+}
+
+.MovieFlix_Content {
+    width: 100%;
+    flex-grow: 1; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    row-gap: 10vmin;
+    margin-top: 4%;
+    /* background-color: white; */
+   
+}
+
+.header_context {
+    width: 60%;
+    height: 100%;
+}
+
+.Search_Field {
+    width: 40%;
+    height: 100%;
+    padding-top: 2%;
+}
+
+input {
+    width: 50%;
+    height: 7vmin;
+    border-radius: 3px;
+    margin-left: 40%;
+    border: none;
+    background-color: black;
+    border: 3px groove white;
+    animation-name: Search_Field;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+
+input:focus {
+    background-color:rgb(155, 151, 151);
+    font-family: "Oswald", sans-serif;
+    font-size: 4vmin;
+}
+
+input::placeholder {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 4vmin;
+}
+video{
+    margin-left: 18%;
+    outline: 5px solid white;
+    border-radius: 20px 20px 20px 20px;
+}
+
+@keyframes Search_Field {
+    0% { border-color: aqua; }
+    20% { border-color: rgb(211, 14, 178); }
+    40% { border-color: rgb(7, 7, 209); }
+    60% { border-color: rgb(22, 240, 22); }
+    80% { border-color: rgb(255, 165, 0); }
+    100% { border-color: rgb(234, 238, 22); }
+}
+
+#header_line {
+    font-size: 10vmin;
+    font-family: "Oswald", sans-serif;
+    margin-left: 2%;
+}
+
+h1 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 4vmin;
+    color: aqua;
+    animation-name: movie_heading;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movie_heading {
+    0% { color: aqua; }
+    20% { color: rgb(211, 14, 178); }
+    40% { color: rgb(7, 7, 209); }
+    60% { color: rgb(22, 240, 22); }
+    80% { color: rgb(255, 165, 0); }
+    100% { color: rgb(234, 238, 22); }
+}
+
+.movie_poster {
+    width: 100%;
+    height: 100%;
+}
+
+.movie {
+    width: 20%;
+    height: 60vmin;
+    margin-top: 1%;
+    background-color: black;
+    border-radius: 10px;
+    margin-left: 2%;
+    border: 3px groove aqua;
+    box-shadow:3px 3px 3px 3px aqua;
+    animation-name: movie;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movie {
+    0% {
+        border-color: aqua;
+        box-shadow: 3px 3px 3px 3px aqua;
+    }
+    20% {
+        border-color: rgb(211, 14, 178);
+        box-shadow: 3px 3px 3px 3px rgb(211, 14, 178);
+    }
+    40% {
+        border-color: rgb(7, 7, 209);
+        box-shadow: 3px 3px 3px 3px rgb(7, 7, 209);
+    }
+    60% {
+        border-color: rgb(22, 240, 22);
+        box-shadow: 3px 3px 3px 3px rgb(22, 240, 22);
+    }
+    80% {
+        border-color: rgb(255, 165, 0);
+        box-shadow: 3px 3px 3px 3px rgb(255, 165, 0);
+    }
+    100% {
+        border-color: rgb(234, 238, 22);
+        box-shadow: 3px 3px 3px 3px rgb(234, 238, 22);
+    }
+}
+
+.movie_image {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 0;
+}
+
+.movie_heading {
+    width: 100%;
+    min-height: 10%;
+}
+
+.movie_link {
+    width: 100%;
+    height: 10%;
+}
+
+.movie_description {
+    width: 100%;
+    height: 14%;
+    color: white;
+}
+
+#movie_heading {
+    font-size: 3vmin;
+}
+
+#link {
+    font-size: 2vmin;
+    color: aqua;
+    text-decoration: none;
+    animation-name: btn;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+#link-btn {
+    width: 50%;
+    height: 100%;
+    padding-right: 30%;
+    border: none;
+    color: aqua;
+    background-color: transparent;
+}
+@keyframes operation_btns {
+    0% { 
+        border-color: aqua; 
+        color: aqua; 
+    }
+    20% { 
+        border-color: rgb(211, 14, 178); 
+        color: rgb(211, 14, 178); 
+    }
+    40% { 
+        border-color: rgb(7, 7, 209); 
+        color: rgb(7, 7, 209); 
+    }
+    60% { 
+        border-color: rgb(22, 240, 22); 
+        color: rgb(22, 240, 22); 
+    }
+    80% { 
+        border-color: rgb(255, 165, 0); 
+        color: rgb(255, 165, 0); 
+    }
+    100% { 
+        border-color: rgb(234, 238, 22); 
+        color: rgb(234, 238, 22); 
+    }
+}
+
+
+@keyframes btn {
+    0% { color: aqua; }
+    20% { color: rgb(211, 14, 178); }
+    40% { color: rgb(7, 7, 209); }
+    60% { color: rgb(22, 240, 22); }
+    80% { color: rgb(255, 165, 0); }
+    100% { color: rgb(234, 238, 22); }
+}
+
+#loading_img {
+    width: 20%;
+    height: 20vmin;
+    margin-left: 38%;
+    margin-top: 15%;
+}
+
+#warning_message {
+    color: white;
+    font-size: 3vmin;
+    margin-left: 40%;
+}
+
+.Operating_Buttons {
+    width: 100%;
+    height: 10vmin;
+    display: flex;
+    margin-top: 3%;
+    /* background-color: white; */
+}
+
+.Preview_Button, .Next_Button {
+    width: 50%;
+    height: 100%;
+    margin-top: 1%;
+}
+
+#Prebtn, #Nextbtn {
+    width: 18%;
+    height: 65%;
+    background-color: black;
+    color: aqua;
+    border: 3px groove aqua;
+    margin-left: 38%;
+    border-radius: 30px;
+    animation: operation_btns;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+#Prebtn:hover, #Nextbtn:hover {
+    cursor: pointer;
+}
+
+#movie-Des {
+    font-size: 2.7vmin;
+    font-family: "Nunito Sans", sans-serif;
+    animation-name: btn;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.movie-Rating {
+    width: 100%;
+    height: 15%;
+    padding-top: 5%;
+}
+
+p {
+    font-size: 2.7vmin;
+    font-family: "Nunito Sans", sans-serif;
+    animation-name: btn;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+#heading_img{
+    height: 13vmin;
+    width: 10%;
+    padding-top: 4%;
+}
+
+@media screen and (max-width: 680px){
+    .MovieFlix_Website{
+        width: 100%;
+        height:100%;
+        background-color: black;
+    }
+    .MovieFlix_Content{
+        width: 100%;
+        /* background-color: blueviolet; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        padding-left:5%;
+        row-gap: 8vmin;
+        margin-top: 0%;
+    }
+    .movie{
+        width: 40%;
+        height: 50vmin;
+        margin-top: 5%;
+    }
+    .MovieFlix_Header{
+        width: 100%;
+        min-height: 15vmin;
+        /* background-color: blue; */
+        display: flex;
+        margin-top:0%;
+    }
+    .header_context{
+        width: 60%;
+        height: 100%;
+        /* background-color: green; */
+    }
+    #header_line{
+        font-size: 8vmin;
+    }
+    #heading_img{
+        height: 10vmin;
+    }
+    #searbtn{
+        display:none;
+    }
+    input{
+        width: 80%;
+        margin-left:10% ;
+        margin-top: 2%;
+    }
+}
