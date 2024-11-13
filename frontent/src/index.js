@@ -7,7 +7,6 @@ import { BrowserRouter } from 'react-router-dom';
 import Player from "./Website/Player";
 import App from './App';
 import "./Website/Website.css";
-import MovieDetails from './Website/MovieDetails';
 import CommentBox from './Website/CommentBox';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
