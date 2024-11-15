@@ -3,7 +3,6 @@ import "./MovieDetails.css";
 import CommentBox from './CommentBox';
 const MovieDetails=()=> {
   return (
-    <div>
         <div className='Movie_Details'>
             <div className='Movie_Details_img'></div>
             <div className='Movie_Details_Summary'></div>
@@ -13,7 +12,6 @@ const MovieDetails=()=> {
             </div>
         </div>
       
-    </div>
   )
 }
 export default MovieDetails;

@@ -1,28 +1,51 @@
 .Movie_Details{
     width:100%;
-    height:100vh;
+    min-height:100vh;
     background-color: white;
+    overflow: hidden;
 }
 .Movie_Details_img{
 width: 100%;
-height: 50%;
+height: 50vmin;
 background-color: yellow;
 }
 .Movie_Details_Summary{
     width: 100%;
-   min-height: 30%;
+   min-height: 30vmin;
    background-color: black;
 }
 .Movie_Cast{
     width: 100%;
-    height:15%;
+    height:15vmin;
     background-color: orange;
 }
-.Comment_Box{
+.Comment_Box {
     width: 100%;
-    min-height: 50%;
-    background-color: darkcyan;
-}
+    min-height: 50vmin; /* Ensures the parent div has a minimum height of 50vmin */
+    background-color: yellow;
+  }
+
+  /* Child div that should take up the full height of the parent */
+  .Comments {
+    width: 100%;
+    height: 50vmin; /* Makes the child div fill the full height of the parent */
+    background-color: green;
+  }
+  .Comment_Heading{
+    width: 100%;
+    height: 30%;
+    background-color: crimson;
+    text-align: center;
+    padding-top: 2%;
+    font-size: 4vmin;
+    font-family: "Bebas Neue", sans-serif;
+    color:white;
+  }
+  .Comment_Section{
+    width: 100%;
+    height: 70%;
+    background-color: aqua;
+  }
 #comment_Area{
     width:60%;
     height:20vmin;
@@ -35,7 +58,7 @@ background-color: yellow;
     border-color: skyblue;
 }
 .commentline{
-    width: 60%;
+    width: 90%;
     min-height: 10vmin;
     border-top: none;
     border-left: none;
@@ -43,29 +66,45 @@ background-color: yellow;
     border-bottom: 1px groove skyblue;
     word-wrap: break-word;
 }
-.User_logo{
+.User_Info{
     width: 100%;
-    height: 35%;
-    padding-top: 1%;
-    padding-left: 1%;
-    /* background-color: yellow; */
+    height: 10%;
+    /* padding-top: 1%;
+    padding-left: 1%; */
+    /* background-color: green; */
+    display: flex;
+}
+.User_logo{
+    width: 6%;
+    height: 10vmin;
+    /* background-color: aqua; */
+}
+.User_Name{
+    width: 97%;
+    height: 10vmin;
+    padding-top: 2.2%;
+    /* background-color: blue; */
 }
 .User_Comment{
     width: 100%;
     height: 65%;
     padding-top: 1.5%;
-    /* background-color: black; */
+    /* background-color: red; */
     padding-left: 4%;
     padding-bottom: 1%;
 }
 #user_logo{
-    width: 3%;
-    height: 3vmin;
+    width: 100%;
+    height: 100%;
+    color: white;
 }
 .comments-section{
     margin-left: 10%;
     padding-top: 3%;
 }
 #comment_linee{
-    color:black;
+    color:white;
+}
+span{
+    color:white;
 }
