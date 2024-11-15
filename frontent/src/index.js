@@ -1,18 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Website from './Website/Website';
-import Fetching from './Website/Fetching';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import Player from "./Website/Player";
+import MovieDetails from './Website/MovieDetails';
 import App from './App';
 import "./Website/Website.css";
+import CommentBox from './Website/CommentBox';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <App/>
+    <CommentBox/>
     </BrowserRouter>
   </React.StrictMode>
 );
